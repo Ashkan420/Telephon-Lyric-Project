@@ -69,7 +69,7 @@ async def song_handler(event):
 
     # Send final message fresh so preview works
     final_msg = (
-        f"{title} — {artist}"
+        f"{title} — {artist}\n"
         f"{telegraph_link}"
     )
 
