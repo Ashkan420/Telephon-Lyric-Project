@@ -20,7 +20,6 @@ async def send_to_telegraph(album_msg, lyrics, chat_id):
         await asyncio.sleep(0.5)  # small delay to avoid flooding
 
 
-
     done_msg = None
     async for msg in client.iter_messages(TELEGRAPH_BOT, min_id=last_id, limit=15):
         if msg.buttons:
