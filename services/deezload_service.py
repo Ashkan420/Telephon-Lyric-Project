@@ -6,7 +6,7 @@ async def forward_deezload_messages(deezer_link: str):
     async with client.conversation(SONG_BOT, timeout=60) as conv:
         sent_msg = await conv.send_message(deezer_link)
 
-    await asyncio.sleep(5)
+    await asyncio.sleep(6)
 
     msgs = [msg async for msg in client.iter_messages(
         SONG_BOT, min_id=sent_msg.id, limit=8
