@@ -1,0 +1,21 @@
+# Python
+__pycache__
+.pyc
+.pyo
+.pyd
+
+# Environment
+.env
+secrets.env
+
+# Telethon session files
+.session
+
+# VSCode
+.vscode
+
+# macOS
+.DS_Store
+
+# Logs
+.log
