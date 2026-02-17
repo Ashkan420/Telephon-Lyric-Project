@@ -1,4 +1,8 @@
 from telethon import TelegramClient
-from config import API_ID, API_HASH
+from telethon.sessions import StringSession
+from config import API_ID, API_HASH, TELETHON_SESSION
 
-client = TelegramClient("", API_ID, API_HASH)
+if not TELETHON_SESSION:
+    raise Exception("❌ TELETHON_SESSION is missing!")
+
+client = TelegramClient(StringSession(TELETHON_SESSION), API_ID, API_HASH)
