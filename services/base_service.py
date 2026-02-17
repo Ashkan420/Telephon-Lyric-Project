@@ -17,4 +17,4 @@ class BaseService:
             cls._session = None
 
 # Ensure session is closed on exit
-asyncio.get_event_loop().create_task(BaseService.get_session())
+#asyncio.get_event_loop().create_task(BaseService.get_session())
